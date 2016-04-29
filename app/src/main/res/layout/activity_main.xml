@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".activitys.MainActivity">
+
+            <Button
+                android:id="@+id/_1activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_1activity" />
+
+            <Button
+                android:id="@+id/_2activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2activity" />
+
+            <Button
+                android:id="@+id/_3activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_3activity" />
+
+            <Button
+                android:id="@+id/_4activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_4activity" />
+
+            <Button
+                android:id="@+id/_5activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_5activity" />
+
+            <Button
+                android:id="@+id/_6activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_6activity" />
+
+            <Button
+                android:id="@+id/_7activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_7activity" />
+
+            <Button
+                android:id="@+id/_8activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_8activity" />
+
+            <Button
+                android:id="@+id/_9activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_9activity" />
+
+            <Button
+                android:id="@+id/_10activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_10activity" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
