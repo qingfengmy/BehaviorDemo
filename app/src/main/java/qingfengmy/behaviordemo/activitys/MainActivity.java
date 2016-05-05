@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import qingfengmy.behaviordemo.R;
+import qingfengmy.behaviordemo.Stickyscrollview.StickyScrollActivity;
+import qingfengmy.behaviordemo.searchview.SearchViewActivity;
 import qingfengmy.behaviordemo.shareapk.ShareApkActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -88,6 +90,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ShareApkActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.stickyScrollview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StickyScrollActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.searchView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SearchViewActivity.class);
                 startActivity(intent);
             }
         });

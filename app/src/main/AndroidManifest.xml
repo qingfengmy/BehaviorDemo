@@ -29,7 +29,10 @@
         <activity android:name=".activitys._8Activity" />
         <activity android:name=".activitys._9Activity" />
         <activity android:name=".activitys._10Activity" />
-        <activity android:name=".shareapk.ShareApkActivity"></activity>
+        <activity android:name=".shareapk.ShareApkActivity" />
+        <activity android:name=".searchview.SearchViewActivity" />
+        <activity android:name=".Stickyscrollview.StickyScrollView" />
+        <activity android:name=".Stickyscrollview.StickyScrollActivity"></activity>
     </application>
 
 </manifest>

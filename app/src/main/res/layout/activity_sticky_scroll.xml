@@ -1,0 +1,56 @@
+<qingfengmy.behaviordemo.Stickyscrollview.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stickyScrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:text="这是头部" />
+
+        <FrameLayout
+            android:id="@+id/top"
+            android:background="#AAff0000"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#cccccccc"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="这是固定部分"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点我一下" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n内容\n" />
+
+    </LinearLayout>
+
+</qingfengmy.behaviordemo.Stickyscrollview.StickyScrollView>

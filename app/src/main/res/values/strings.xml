@@ -14,4 +14,7 @@
     <string name="_9activity">NestedScrolling实践</string>
     <string name="_10activity">ScrollView2</string>
     <string name="shareapk">分享已安装的apk</string>
+    <string name="stickyScrollview">固定头部的ScrollView</string>
+    <string name="searchView">Android.support.v7.widget.SearchView</string>
+    <string name="search_hint_tip">请输入搜索内容</string>
 </resources>

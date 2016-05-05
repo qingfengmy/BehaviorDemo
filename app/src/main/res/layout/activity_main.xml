@@ -82,6 +82,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/shareapk" />
+            <Button
+                android:id="@+id/stickyScrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stickyScrollview" />
+            <Button
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/searchView" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

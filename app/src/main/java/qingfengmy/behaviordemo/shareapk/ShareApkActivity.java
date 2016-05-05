@@ -1,5 +1,6 @@
 package qingfengmy.behaviordemo.shareapk;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
@@ -24,16 +25,22 @@ import qingfengmy.behaviordemo.ItemShareApkBinding;
 import qingfengmy.behaviordemo.R;
 import qingfengmy.behaviordemo.adapter.CommonListAdapter;
 
+/**
+ * 分享本机安装的apk
+ */
 public class ShareApkActivity extends AppCompatActivity {
     private PackageManager mPackageManager;
     private List<ShareInfo> infoList = new ArrayList<>();
     private CommonListAdapter adapter;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share_apk);
         setTitle(getString(R.string.shareapk));
+        progressDialog = new ProgressDialog(this);
+        progressDialog.show();
 
         new Thread() {
             @Override
@@ -43,6 +50,7 @@ public class ShareApkActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        progressDialog.dismiss();
                         adapter.addAll(infoList);
                     }
                 });
