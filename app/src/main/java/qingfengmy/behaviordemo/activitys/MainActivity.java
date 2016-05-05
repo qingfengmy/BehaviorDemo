@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import qingfengmy.behaviordemo.R;
+import qingfengmy.behaviordemo.shareapk.ShareApkActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -80,6 +81,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, _10Activity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.shareapk).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShareApkActivity.class);
                 startActivity(intent);
             }
         });

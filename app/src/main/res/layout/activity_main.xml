@@ -77,6 +77,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/_10activity" />
+            <Button
+                android:id="@+id/shareapk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shareapk" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

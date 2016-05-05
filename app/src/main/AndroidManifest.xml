@@ -28,7 +28,8 @@
         <activity android:name=".activitys._7Activity" />
         <activity android:name=".activitys._8Activity" />
         <activity android:name=".activitys._9Activity" />
-        <activity android:name=".activitys._10Activity"></activity>
+        <activity android:name=".activitys._10Activity" />
+        <activity android:name=".shareapk.ShareApkActivity"></activity>
     </application>
 
 </manifest>

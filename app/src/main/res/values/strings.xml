@@ -13,4 +13,5 @@
     <string name="_8activity">自定义Behavior2</string>
     <string name="_9activity">NestedScrolling实践</string>
     <string name="_10activity">ScrollView2</string>
+    <string name="shareapk">分享已安装的apk</string>
 </resources>
