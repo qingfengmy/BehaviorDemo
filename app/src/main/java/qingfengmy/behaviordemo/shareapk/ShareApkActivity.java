@@ -24,6 +24,11 @@ import java.util.List;
 import qingfengmy.behaviordemo.ItemShareApkBinding;
 import qingfengmy.behaviordemo.R;
 import qingfengmy.behaviordemo.adapter.CommonListAdapter;
+import rx.Observable;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 
 /**
  * 分享本机安装的apk
@@ -40,22 +45,25 @@ public class ShareApkActivity extends AppCompatActivity {
         setContentView(R.layout.activity_share_apk);
         setTitle(getString(R.string.shareapk));
         progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("加载中。。。");
         progressDialog.show();
 
-        new Thread() {
+        Observable.create(new Observable.OnSubscribe<List<ShareInfo>>() {
+
             @Override
-            public void run() {
-                super.run();
+            public void call(Subscriber<? super List<ShareInfo>> subscriber) {
                 initShareInfos();
-                runOnUiThread(new Runnable() {
+                subscriber.onNext(infoList);
+            }
+        }).subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<List<ShareInfo>>() {
                     @Override
-                    public void run() {
+                    public void call(List<ShareInfo> shareInfos) {
                         progressDialog.dismiss();
                         adapter.addAll(infoList);
                     }
                 });
-            }
-        }.start();
 
         ListView listView = (ListView) findViewById(R.id.listView);
         adapter = new CommonListAdapter<ShareInfo, ItemShareApkBinding>(this) {

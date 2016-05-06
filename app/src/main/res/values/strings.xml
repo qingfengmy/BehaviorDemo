@@ -17,4 +17,5 @@
     <string name="stickyScrollview">固定头部的ScrollView</string>
     <string name="searchView">Android.support.v7.widget.SearchView</string>
     <string name="search_hint_tip">请输入搜索内容</string>
+    <string name="rxbus">rxjava实现的rxbus</string>
 </resources>

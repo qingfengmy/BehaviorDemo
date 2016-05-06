@@ -27,7 +27,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="right"
         android:background="#FFFF0000"
-        app:layout_behavior="qingfengmy.behaviordemo.ScrollBehavior">
+        app:layout_behavior="qingfengmy.behaviordemo.behavior.ScrollBehavior">
 
 
         <TextView

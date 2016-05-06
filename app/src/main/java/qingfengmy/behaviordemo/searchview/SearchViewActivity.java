@@ -20,6 +20,9 @@ import qingfengmy.behaviordemo.ItemSearchBinding;
 import qingfengmy.behaviordemo.R;
 import qingfengmy.behaviordemo.adapter.CommonListAdapter;
 
+/**
+ * android searchView控件的使用
+ */
 public class SearchViewActivity extends AppCompatActivity {
     SearchView mSearchView;
     SearchView.SearchAutoComplete mEdit;
@@ -68,7 +71,7 @@ public class SearchViewActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                mSearchText = newText ;
+                mSearchText = newText;
                 doSearch();
                 return true;
             }
@@ -115,7 +118,7 @@ public class SearchViewActivity extends AppCompatActivity {
 
     private void doSearch() {
         textList.clear();
-        for (int i=0; i<20;i++){
+        for (int i = 0; i < 20; i++) {
             textList.add(mSearchText);
         }
         adapter.clear();
@@ -125,7 +128,7 @@ public class SearchViewActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id==R.id.menu_search){
+        if (id == R.id.menu_search) {
 
             return true;
         }

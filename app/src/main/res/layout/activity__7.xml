@@ -42,6 +42,6 @@
         android:gravity="center"
         android:text="auto"
         android:textColor="@android:color/white"
-        app:layout_behavior="qingfengmy.behaviordemo.DependentBehavior" />
+        app:layout_behavior="qingfengmy.behaviordemo.behavior.DependentBehavior" />
 
 </android.support.design.widget.CoordinatorLayout>

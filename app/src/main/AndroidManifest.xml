@@ -32,7 +32,8 @@
         <activity android:name=".shareapk.ShareApkActivity" />
         <activity android:name=".searchview.SearchViewActivity" />
         <activity android:name=".Stickyscrollview.StickyScrollView" />
-        <activity android:name=".Stickyscrollview.StickyScrollActivity"></activity>
+        <activity android:name=".Stickyscrollview.StickyScrollActivity" />
+        <activity android:name=".rxbus.RxBusActivity"></activity>
     </application>
 
 </manifest>

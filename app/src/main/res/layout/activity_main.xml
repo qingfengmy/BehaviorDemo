@@ -92,6 +92,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/searchView" />
+            <Button
+                android:id="@+id/rxbus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rxbus" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

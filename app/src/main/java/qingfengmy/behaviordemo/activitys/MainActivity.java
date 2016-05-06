@@ -7,6 +7,7 @@ import android.view.View;
 
 import qingfengmy.behaviordemo.R;
 import qingfengmy.behaviordemo.Stickyscrollview.StickyScrollActivity;
+import qingfengmy.behaviordemo.rxbus.RxBusActivity;
 import qingfengmy.behaviordemo.searchview.SearchViewActivity;
 import qingfengmy.behaviordemo.shareapk.ShareApkActivity;
 
@@ -104,6 +105,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SearchViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.rxbus).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RxBusActivity.class);
                 startActivity(intent);
             }
         });
