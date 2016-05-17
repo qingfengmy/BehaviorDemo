@@ -115,5 +115,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.theme).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ThemeActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.listchange).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListChangeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

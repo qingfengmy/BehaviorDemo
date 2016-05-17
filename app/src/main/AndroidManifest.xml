@@ -31,9 +31,10 @@
         <activity android:name=".activitys._10Activity" />
         <activity android:name=".shareapk.ShareApkActivity" />
         <activity android:name=".searchview.SearchViewActivity" />
-        <activity android:name=".Stickyscrollview.StickyScrollView" />
         <activity android:name=".Stickyscrollview.StickyScrollActivity" />
-        <activity android:name=".rxbus.RxBusActivity"></activity>
+        <activity android:name=".rxbus.RxBusActivity" />
+        <activity android:name=".activitys.ThemeActivity" />
+        <activity android:name=".activitys.ListChangeActivity"></activity>
     </application>
 
 </manifest>

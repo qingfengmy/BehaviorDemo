@@ -48,7 +48,7 @@ public class Fragment2 extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (!subscription.isUnsubscribed()){
+        if (!subscription.isUnsubscribed()) {
             subscription.unsubscribe();
         }
     }
