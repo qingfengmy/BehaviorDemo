@@ -5,3 +5,5 @@
 ### 3. 自己实现stickyScrollView
 ### 4. rxjava实现的rxbus
 ### 5. 商品单双列切换
+### 6. flexboxlayout
+### 5. itemtouchhelper
