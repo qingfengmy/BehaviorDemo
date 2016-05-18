@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".ItemProductBinding">
+
+        <variable
+            name="text"
+            type="String" />
+    </data>
+
+    <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/item_list"
+            app:text="@{text}" />
+
+        <include
+            layout="@layout/item_grid"
+            app:text="@{text}" />
+    </ViewSwitcher>
+</layout>

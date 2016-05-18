@@ -25,6 +25,10 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Re
         return position >= 0 && position < dateList.size() ? dateList.get(position) : null;
     }
 
+    public List<T> getDateList() {
+        return dateList;
+    }
+
     @Override
     public int getItemCount() {
         return dateList.size();

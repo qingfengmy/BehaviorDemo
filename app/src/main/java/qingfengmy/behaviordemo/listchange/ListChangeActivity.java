@@ -1,4 +1,4 @@
-package qingfengmy.behaviordemo.activitys;
+package qingfengmy.behaviordemo.listchange;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -25,8 +25,6 @@ import qingfengmy.behaviordemo.ItemGridBinding;
 import qingfengmy.behaviordemo.ItemListBinding;
 import qingfengmy.behaviordemo.R;
 import qingfengmy.behaviordemo.adapter.CommonRecyclerAdapter;
-import qingfengmy.behaviordemo.listchange.DeviceUtil;
-import qingfengmy.behaviordemo.listchange.PriceView;
 
 /**
  * 单双列商品切换

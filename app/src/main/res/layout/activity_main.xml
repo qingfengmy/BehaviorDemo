@@ -117,6 +117,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="单双列切换" />
+                <Button
+                    android:id="@+id/listchange2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="单双列切换2" />
+                <Button
+                    android:id="@+id/flexbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="flexbox" />
+                <Button
+                    android:id="@+id/itemTouchHelper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="itemTouchHelper" />
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
 

@@ -1,15 +1,20 @@
 package qingfengmy.behaviordemo.activitys;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import qingfengmy.behaviordemo.FlexBoxLayout.FlexBoxActivity;
 import qingfengmy.behaviordemo.R;
 import qingfengmy.behaviordemo.Stickyscrollview.StickyScrollActivity;
+import qingfengmy.behaviordemo.itemtouchhelper.ItemTouchHelpterActivity;
+import qingfengmy.behaviordemo.listchange.ListChange2Activity;
+import qingfengmy.behaviordemo.listchange.ListChangeActivity;
 import qingfengmy.behaviordemo.rxbus.RxBusActivity;
 import qingfengmy.behaviordemo.searchview.SearchViewActivity;
 import qingfengmy.behaviordemo.shareapk.ShareApkActivity;
+import qingfengmy.behaviordemo.theme.ThemeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -126,6 +131,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListChangeActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.listchange2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListChange2Activity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.flexbox).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FlexBoxActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.itemTouchHelper).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ItemTouchHelpterActivity.class);
                 startActivity(intent);
             }
         });

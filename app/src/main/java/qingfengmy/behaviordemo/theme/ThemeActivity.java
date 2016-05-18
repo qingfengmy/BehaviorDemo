@@ -1,4 +1,4 @@
-package qingfengmy.behaviordemo.activitys;
+package qingfengmy.behaviordemo.theme;
 
 import android.content.res.Resources;
 import android.os.Bundle;
