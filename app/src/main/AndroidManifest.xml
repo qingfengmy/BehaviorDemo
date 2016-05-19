@@ -39,6 +39,9 @@
         <activity android:name=".FlexBoxLayout.FlexBoxActivity" />
         <activity android:name=".listchange.ListChange2Activity" />
         <activity android:name=".itemtouchhelper.ItemTouchHelpterActivity"></activity>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
     </application>
 
 </manifest>

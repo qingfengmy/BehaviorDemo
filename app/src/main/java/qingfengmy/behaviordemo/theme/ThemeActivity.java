@@ -1,42 +1,26 @@
 package qingfengmy.behaviordemo.theme;
 
-import android.content.res.Resources;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import qingfengmy.behaviordemo.R;
+import qingfengmy.behaviordemo.ThemeActivityBinding;
 
 public class ThemeActivity extends AppCompatActivity {
+
+    ThemeActivityBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theme);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_theme);
 
-        findViewById(R.id.change).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
+        StyleInfo styleInfo = new StyleInfo();
+        styleInfo.setStyleId(R.style.textStyle1);
+        binding.setStyleInfo(styleInfo);
+
+//        binding.text.setBackgroundColor(R.co);
     }
 
-    private Resources.Theme mTheme;
-    private int mThemeResource;
-
-    Resources.Theme getThemes() {
-        final boolean first = mTheme == null;
-        if (first) {
-            mTheme = getResources().newTheme();
-            Resources.Theme theme = getBaseContext().getTheme();
-            if (theme != null) {
-                mTheme.setTo(theme);
-            }
-        }
-        onApplyThemeResource(mTheme, mThemeResource, first);
-        return mTheme;
-    }
 }

@@ -3,7 +3,6 @@ package qingfengmy.behaviordemo.listchange;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,6 +20,7 @@ public class ListChange2Activity extends AppCompatActivity {
     RecyclerView recyclerView;
     ListChangeAdapter adapter;
     boolean isList;
+    GridLayoutManager gridLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,17 +41,19 @@ public class ListChange2Activity extends AppCompatActivity {
         }
         adapter.addAll(dates);
         recyclerView.setAdapter(adapter);
+        gridLayoutManager = new GridLayoutManager(this,2);
+        recyclerView.setLayoutManager(gridLayoutManager);
         changeList();
         isList = true;
     }
 
     private void changeGrid() {
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        gridLayoutManager.setSpanCount(2);
         adapter.setList(false);
     }
 
     private void changeList() {
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        gridLayoutManager.setSpanCount(1);
         adapter.setList(true);
     }
 

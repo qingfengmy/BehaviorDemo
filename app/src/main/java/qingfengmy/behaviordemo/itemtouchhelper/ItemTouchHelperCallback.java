@@ -17,7 +17,8 @@ public abstract class ItemTouchHelperCallback extends ItemTouchHelper.Callback {
         if (recyclerView.getLayoutManager() instanceof LinearLayoutManager) {
             // list上下
             dragFlags = ItemTouchHelper.UP | ItemTouchHelper.DOWN;
-        }else if (recyclerView.getLayoutManager() instanceof GridLayoutManager){
+        }
+        if (recyclerView.getLayoutManager() instanceof GridLayoutManager){
             // grid 上下左右
             dragFlags = ItemTouchHelper.UP | ItemTouchHelper.DOWN | ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
         }
