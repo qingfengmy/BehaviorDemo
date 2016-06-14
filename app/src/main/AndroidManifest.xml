@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activitys.MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,10 +39,17 @@
         <activity android:name=".listchange.ListChangeActivity" />
         <activity android:name=".FlexBoxLayout.FlexBoxActivity" />
         <activity android:name=".listchange.ListChange2Activity" />
-        <activity android:name=".itemtouchhelper.ItemTouchHelpterActivity"></activity>
+        <activity android:name=".itemtouchhelper.ItemTouchHelpterActivity" />
+
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".scroller.ScrollerActivity"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity android:name=".rxjavadownload.RxjavaDownloadActivity" />
+        <activity android:name=".okhttp.OkHttpActivity" />
     </application>
 
 </manifest>

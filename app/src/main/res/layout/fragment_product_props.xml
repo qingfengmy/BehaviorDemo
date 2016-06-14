@@ -1,0 +1,7 @@
+<qingfengmy.behaviordemo.scroller.ProductListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+</qingfengmy.behaviordemo.scroller.ProductListView >

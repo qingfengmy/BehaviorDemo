@@ -11,7 +11,10 @@ import qingfengmy.behaviordemo.Stickyscrollview.StickyScrollActivity;
 import qingfengmy.behaviordemo.itemtouchhelper.ItemTouchHelpterActivity;
 import qingfengmy.behaviordemo.listchange.ListChange2Activity;
 import qingfengmy.behaviordemo.listchange.ListChangeActivity;
+import qingfengmy.behaviordemo.okhttp.OkHttpActivity;
 import qingfengmy.behaviordemo.rxbus.RxBusActivity;
+import qingfengmy.behaviordemo.rxjavadownload.RxjavaDownloadActivity;
+import qingfengmy.behaviordemo.scroller.ScrollerActivity;
 import qingfengmy.behaviordemo.searchview.SearchViewActivity;
 import qingfengmy.behaviordemo.shareapk.ShareApkActivity;
 import qingfengmy.behaviordemo.theme.ThemeActivity;
@@ -152,6 +155,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ItemTouchHelpterActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.scroller).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ScrollerActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.retrofit_download).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RxjavaDownloadActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.okhttp).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, OkHttpActivity.class);
                 startActivity(intent);
             }
         });

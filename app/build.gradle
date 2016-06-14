@@ -9,7 +9,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "qingfengmy.behaviordemo"
+        applicationId "qingfengmy.behaviordemo.free"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
@@ -20,16 +20,16 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug{}
+        debug {}
     }
 
-    productFlavors{
+    productFlavors {
         xiaomi {}
         _360 {}
         baidu {}
         wandoujia {}
-        yilian{}
-        green{}
+        yilian {}
+        green {}
     }
 
     productFlavors.all {
@@ -40,6 +40,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
+    compile files('libs/umeng-analytics-v5.6.4.jar')
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
     compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
@@ -48,5 +49,11 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'com.orhanobut:dialogplus:1.11@aar'
     compile 'com.google.android:flexbox:0.1.2'
-    compile files('libs/umeng-analytics-v5.6.4.jar')
+
+    compile "com.squareup.retrofit2:retrofit:2.0.2"
+    compile "com.squareup.retrofit2:adapter-rxjava:2.0.2"
+    compile "com.squareup.retrofit2:converter-gson:2.0.2"
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile group: 'com.squareup.okhttp', name: 'okhttp-urlconnection', version: '2.7.5'
+    compile group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: '3.3.1'
 }
